@@ -1,0 +1,12 @@
+$primary-color: #3075fc;
+$secondary-color: #a230fc;
+$linear-gradient-color: linear-gradient(92.6deg, #3075fc 26.36%, #a230fc 90.49%);
+$text-color: #48455c;
+$font-family: 'Gilroy', sans-serif;
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --text-color: #{$text-color};
+  --font-family: #{$font-family};
+}

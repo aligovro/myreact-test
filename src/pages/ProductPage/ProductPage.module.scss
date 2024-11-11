@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.product-page {
+  padding: 20px;
+  font-family: var(--font-family);
+
+  &__title {
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+
+  &__info {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: darken($text-color, 20%);
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: $primary-color;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
