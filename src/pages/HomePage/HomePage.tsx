@@ -4,7 +4,7 @@ import styles from './HomePage.module.scss';
 
 const HomePage: React.FC = () => {
   return (
-    <div className={styles.homepage}>
+    <div className={`container ${styles.homepage}`}>
       <h1 className={styles.homepage__title}>Главная страница</h1>
       <p className={styles.homepage__description}>
         Добро пожаловать на сайт! Выберите товар для просмотра.
