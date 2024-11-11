@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './ProductPage.module.scss';
+import DeliveryInfo from '../../components/Product/DeliveryInfo/DeliveryInfo';
 
 const ProductPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -9,6 +10,8 @@ const ProductPage: React.FC = () => {
     <div className={`container ${styles['product-page']}`}>
       <h1 className={styles['product-page__title']}>Страница товара</h1>
       <p className={styles['product-page__info']}>Информация о товаре с ID: {id}</p>
+
+      <DeliveryInfo />
 
       <button className={styles['product-page__button']}>Купить</button>
     </div>
